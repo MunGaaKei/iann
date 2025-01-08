@@ -14,6 +14,11 @@ body {
 	pointer-events: none;
 	overflow: auto;
 }
+.page-main {
+	opacity: 1;
+	pointer-events: unset;
+	overflow: hidden;
+}
 .active {
 	opacity: 1;
 	pointer-events: unset;
@@ -55,21 +60,22 @@ body {
 .link {
 	position: relative;
 	white-space: nowrap;
-	color: #212121;
 	&:before {
 		content: "\20";
 		position: absolute;
 		z-index: -1;
-		left: 0;
+		left: -0.25em;
 		bottom: 4px;
-		right: 0;
-		height: 6px;
+		right: -0.25em;
+		height: 1em;
 		border-radius: 4px;
-		background-color: #cce2ff;
+		background-color: #cdcdcd;
 		transition: inherit;
+		transform: rotate(-12deg);
+		opacity: 0;
 	}
 	&:hover:before {
-		height: 1em;
+		opacity: 1;
 	}
 }
 
@@ -91,6 +97,7 @@ body {
 }
 
 .tooltip {
+	display: inline-block;
 	position: relative;
 	&:hover {
 		.tooltip-content {
@@ -106,7 +113,7 @@ body {
 	transform: translate(-50%, 8px);
 	padding: 2px 8px;
 	border-radius: 4px;
-	background: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.8);
 	color: #fff;
 	backdrop-filter: blur(4px);
 	opacity: 0;
@@ -146,13 +153,31 @@ body {
 	margin-inline: auto;
 }
 
+.page-c {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20vh;
+}
 .c-return {
-	position: absolute;
-	left: 25vw;
-	top: 24vh;
 	font-size: 20px;
 }
-.c-item {
-	position: absolute;
+.c-items {
+	margin: 20px auto;
+	width: 800px;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
+	gap: 12px;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+.c-item {
+	position: relative;
+	h2 {
+		color: #8a8a8a;
+	}
+	&:hover h2 {
+		color: #212121;
+	}
 }

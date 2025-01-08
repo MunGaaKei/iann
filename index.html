@@ -19,19 +19,16 @@
 		<link rel="stylesheet" href="./assets/global.css" />
 	</head>
 	<body>
-		<div
-			class="page"
-			style="opacity: 1; pointer-events: unset; overflow: hidden"
-		>
+		<div class="page page-main">
 			<div class="content bio">
 				<h1>
 					<ruby>满家 <rt>Man</rt></ruby>
 					<ruby>淇 <rt>Iann</rt></ruby>
 				</h1>
 				<p style="margin: 1em 0 4px; font-size: 20px">Design & Codes</p>
-				<p style="display: flex; gap: 8px">
+				<div style="display: flex; gap: 8px; align-items: center">
 					<svg-icon
-						class="icon btn tooltip"
+						class="icon btn tooltip link"
 						icon="photograph"
 						data-action="open/photograph"
 					>
@@ -45,53 +42,57 @@
 						<span class="tooltip-content">Articles</span>
 					</svg-icon> -->
 					<svg-icon
-						class="icon btn tooltip"
+						class="icon btn tooltip link"
 						icon="codes"
 						data-action="open/codes"
 					>
 						<span class="tooltip-content">Codes</span>
 					</svg-icon>
 					<a href="https://github.com/MunGaaKei" target="_blank">
-						<svg-icon class="icon btn tooltip" icon="github">
+						<svg-icon class="icon btn tooltip link" icon="github">
 							<span class="tooltip-content">Github</span>
 						</svg-icon>
 					</a>
-				</p>
+					<a href="mailto:502975759@qq.com">
+						<svg-icon class="icon btn tooltip link" icon="mail">
+							<span class="tooltip-content">Mail</span>
+						</svg-icon>
+					</a>
+				</div>
 			</div>
 			<img src="./assets/stone.png" alt="stone" class="stone" />
 		</div>
 
-		<div id="codes" class="page">
-			<svg-icon
-				class="icon btn c-return"
-				icon="return"
-				data-action="close"
-			></svg-icon>
+		<div id="codes" class="page page-c">
+			<div class="c-items">
+				<svg-icon
+					class="icon btn c-return link"
+					icon="return"
+					data-action="close"
+				></svg-icon>
+				<a
+					href="https://ioca-react.vercel.app/"
+					target="_blank"
+					class="c-item"
+				>
+					<img
+						src="https://ioca-react.vercel.app/logo.jpg"
+						style="width: 60px; height: 60px"
+					/>
 
-			<a
-				href="https://ioca-react.vercel.app/"
-				target="_blank"
-				class="c-item"
-				style="left: 32vw; top: 40vh"
-			>
-				<img
-					src="https://ioca-react.vercel.app/logo.jpg"
-					style="width: 60px; height: 60px"
-				/>
+					<h2 class="jaini">IOCA REACT</h2>
+				</a>
 
-				<h2 class="jaini">IOCA REACT</h2>
-			</a>
+				<a
+					href="https://rho-admin.vercel.app/"
+					target="_blank"
+					class="c-item"
+				>
+					<span style="font-weight: bold; font-size: 48px">ρ</span>
 
-			<a
-				href="https://rho-admin.vercel.app/"
-				target="_blank"
-				class="c-item"
-				style="left: 62vw; top: 48vh"
-			>
-				<span style="font-weight: bold; font-size: 42px">ρ</span>
-
-				<h2 class="jaini">Rho Admin</h2>
-			</a>
+					<h2 class="jaini">Rho Admin</h2>
+				</a>
+			</div>
 		</div>
 
 		<div id="articles" class="page">
@@ -105,7 +106,7 @@
 		>
 			<div class="p-left">
 				<svg-icon
-					class="icon btn"
+					class="icon btn link"
 					icon="return"
 					data-action="close"
 					style="font-size: 20px"
