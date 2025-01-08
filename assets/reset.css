@@ -1,0 +1,121 @@
+@font-face {
+	font-family: "jaini";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./Jaini-Regular.ttf");
+}
+
+@font-face {
+	font-family: "overlock";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./OverlockSC-Regular.ttf");
+}
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+	display: block;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+article,
+section,
+body {
+	line-height: 1.5;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.24s;
+}
+b,
+strong {
+	font-weight: 700;
+}
+html {
+	position: relative;
+	height: 100%;
+	color: #212121;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+input:-webkit-autofill {
+	background-color: initial;
+}
+ul,
+ol {
+	list-style: none;
+}
+img,
+video,
+audio,
+iframe {
+	display: block;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	transition: var(--transition);
+}
+h1 {
+	font-size: 2rem;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 1.6rem;
+	line-height: 1.2;
+}
+h3 {
+	font-size: 1.2rem;
+}
+h4,
+h5,
+h6 {
+	font-size: 1rem;
+}
+label {
+	cursor: pointer;
+}
+::selection {
+	background-color: #ffd832 !important;
+	color: #212121 !important;
+}
+.os-windows ::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+}
+.os-windows ::-webkit-scrollbar-thumb {
+	background-color: #aaa;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.os-windows ::-webkit-scrollbar-corner {
+	background: none;
+}

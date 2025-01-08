@@ -2,10 +2,120 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Iann Man</title>
+
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta name="description" content="Personal Website of MunGaaKei." />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+		<meta
+			name="viewport"
+			content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"
+		/>
+		<link rel="shortcut icon" href="./assets/ico.ico" type="image/x-icon" />
+		<title>Better Call Iann 🫵🏽</title>
+		<link rel="stylesheet" href="./assets/reset.css" />
+		<link rel="stylesheet" href="./assets/global.css" />
 	</head>
 	<body>
-		<h1>Iann Man</h1>
+		<div
+			class="page"
+			style="opacity: 1; pointer-events: unset; overflow: hidden"
+		>
+			<div class="content bio">
+				<h1>
+					<ruby>满家 <rt>Man</rt></ruby>
+					<ruby>淇 <rt>Iann</rt></ruby>
+				</h1>
+				<p style="margin: 1em 0 4px; font-size: 20px">Design & Codes</p>
+				<p style="display: flex; gap: 8px">
+					<svg-icon
+						class="icon btn tooltip"
+						icon="photograph"
+						data-action="open/photograph"
+					>
+						<span class="tooltip-content">Photograph</span>
+					</svg-icon>
+					<!-- <svg-icon
+						class="icon btn tooltip"
+						icon="articles"
+						data-action="open/articles"
+					>
+						<span class="tooltip-content">Articles</span>
+					</svg-icon> -->
+					<svg-icon
+						class="icon btn tooltip"
+						icon="codes"
+						data-action="open/codes"
+					>
+						<span class="tooltip-content">Codes</span>
+					</svg-icon>
+					<a href="https://github.com/MunGaaKei" target="_blank">
+						<svg-icon class="icon btn tooltip" icon="github">
+							<span class="tooltip-content">Github</span>
+						</svg-icon>
+					</a>
+				</p>
+			</div>
+			<img src="./assets/stone.png" alt="stone" class="stone" />
+		</div>
+
+		<div id="codes" class="page">
+			<svg-icon
+				class="icon btn c-return"
+				icon="return"
+				data-action="close"
+			></svg-icon>
+
+			<a
+				href="https://ioca-react.vercel.app/"
+				target="_blank"
+				class="c-item"
+				style="left: 32vw; top: 40vh"
+			>
+				<img
+					src="https://ioca-react.vercel.app/logo.jpg"
+					style="width: 60px; height: 60px"
+				/>
+
+				<h2 class="jaini">IOCA REACT</h2>
+			</a>
+
+			<a
+				href="https://rho-admin.vercel.app/"
+				target="_blank"
+				class="c-item"
+				style="left: 62vw; top: 48vh"
+			>
+				<span style="font-weight: bold; font-size: 42px">ρ</span>
+
+				<h2 class="jaini">Rho Admin</h2>
+			</a>
+		</div>
+
+		<div id="articles" class="page">
+			<svg-icon class="icon btn" icon="return" data-action="close" />
+		</div>
+
+		<div
+			id="photograph"
+			class="page"
+			style="display: flex; align-items: flex-start"
+		>
+			<div class="p-left">
+				<svg-icon
+					class="icon btn"
+					icon="return"
+					data-action="close"
+					style="font-size: 20px"
+				></svg-icon>
+			</div>
+
+			<div class="p-grids"></div>
+		</div>
+
+		<script src="./assets/components.js"></script>
+		<script src="./assets/index.js"></script>
 	</body>
 </html>
