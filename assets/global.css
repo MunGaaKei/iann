@@ -148,7 +148,7 @@ body {
 .p-left {
 	position: sticky;
 	top: 50vh;
-	min-width: 100px;
+	min-width: 50px;
 	text-align: center;
 	margin-inline: auto;
 }
