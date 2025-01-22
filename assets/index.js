@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			{
 				link: "https://ioca-react.vercel.app/",
 				title: '<h2 class="jaini">IOCA / REACT</h2>',
-				icon: '<img src="https://ioca-react.vercel.app/logo.jpg"/>',
+				icon: '<img src="https://ioca-react.vercel.app/logo.png"/>',
 			},
 			{
 				link: "https://rho-admin.vercel.app/",
