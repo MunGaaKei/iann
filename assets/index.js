@@ -1,12 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const d = document;
+	const PARAM = "tab";
+	const params = new URLSearchParams(window.location.search);
+	const actions = params.get(PARAM);
 	let el = null;
-	let photoInit = false;
+
+	console.log(actions);
+
+	const inits = {
+		photograph: false,
+		codes: false,
+	};
 
 	// 是否为 WINDOWS 系统
 	if (/windows|win32/i.test(navigator.userAgent)) {
 		d.documentElement.classList.add("os-windows");
 	}
+
+	compileActs(actions);
 
 	d.addEventListener("mousedown", (e) => {
 		el = e.target;
@@ -16,11 +27,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		const tar = e.target;
 		if (el !== tar) return;
 		el = null;
-		const acts = tar.dataset.action?.split("/");
+
+		compileActs(tar.dataset.action);
+	});
+
+	d.addEventListener("keydown", (e) => {
+		if (e.key === "Escape") {
+			e.preventDefault();
+			close();
+		}
+	});
+
+	function compileActs(action) {
+		const acts = action?.split("/");
 
 		if (!acts) return;
 
 		const [act, ...rest] = acts;
+
+		params.set(PARAM, action);
+		history.pushState(null, "", "?" + params.toString());
 
 		switch (act) {
 			case "open":
@@ -32,23 +58,25 @@ document.addEventListener("DOMContentLoaded", () => {
 			default:
 				break;
 		}
-	});
-
-	d.addEventListener("keydown", (e) => {
-		if (e.key === "Escape") {
-			e.preventDefault();
-			close();
-		}
-	});
+	}
 
 	function open(pa, child) {
 		const c = d.querySelector(".page.active");
 		if (c && c.id !== pa) {
 			c.classList.remove("active");
 		}
-		if (pa === "photograph" && !photoInit) {
-			initPhotographs();
+
+		switch (pa) {
+			case "photograph":
+				!inits.photograph && initPhotographs();
+				break;
+			case "codes":
+				!inits.codes && initCodes();
+				break;
+			default:
+				break;
 		}
+
 		d.getElementById(pa).classList.add("active");
 	}
 
@@ -104,5 +132,36 @@ document.addEventListener("DOMContentLoaded", () => {
 			.join("");
 
 		grid.innerHTML = html;
+		inits.photograph = true;
+	}
+
+	function initCodes() {
+		const projects = [
+			{
+				link: "https://ioca-react.vercel.app/",
+				title: '<h2 class="jaini">IOCA / REACT</h2>',
+				icon: '<img src="https://ioca-react.vercel.app/logo.jpg"/>',
+			},
+			{
+				link: "https://rho-admin.vercel.app/",
+				title: '<h2 class="jaini">Rho ADMIN</h2>',
+				icon: "<b>ρ</b>",
+			},
+		];
+
+		const list = d.querySelector(".c-items");
+		const html = projects
+			.map((o) => {
+				const { link, title, icon } = o;
+
+				return `<a href="${link}" target="_blank" class="c-item link">
+				<div class="c-icon">${icon}</div>
+				${title}
+			</a>`;
+			})
+			.join("");
+
+		list.innerHTML = html;
+		inits.codes = true;
 	}
 });
