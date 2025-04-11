@@ -30,9 +30,10 @@ body {
 	box-sizing: border-box;
 	width: 880px;
 	max-width: 100%;
-	font: 16px/1.5 -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell,
-		Consolas, "Open Sans", "Helvetica Neue", sans-serif;
+	font: 16px/1.5 "Red Hat Display", -apple-system, BlinkMacSystemFont, Oxygen,
+		Ubuntu, Cantarell, Consolas, "Open Sans", "Helvetica Neue", sans-serif;
 	color: #212121;
+	letter-spacing: 0.5px;
 }
 a {
 	position: relative;
@@ -44,20 +45,21 @@ a {
 a:after {
 	position: absolute;
 	content: "";
-	left: 0;
+	left: 50%;
 	right: 0;
-	bottom: 0;
-	border-radius: 4px;
-	background: rgba(99, 104, 255, 0.15);
-	height: 50%;
-	transition: all 0.24s;
+	bottom: 0.2em;
+	height: 1em;
+	background: #dadada;
 	z-index: -1;
+	border-radius: 2px;
+	transition: all 0.24s;
 }
 a:hover {
 	color: #000;
-}
-a:hover:after {
-	height: 100%;
+	&:after {
+		left: 12%;
+		background: #ddd;
+	}
 }
 img {
 	display: block;
@@ -70,6 +72,7 @@ h1 {
 ul {
 	margin: 0;
 	padding: 0 0 0 1.5em;
+	list-style: disc;
 }
 .iconfont {
 	font-size: 1.2em;

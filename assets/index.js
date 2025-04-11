@@ -138,13 +138,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	function initCodes() {
 		const projects = [
 			{
+				link: "https://github.com/MunGaaKei",
+				title: "<h2>Visit My GitHub</h2>",
+				icon: '<img src="https://avatars.githubusercontent.com/u/20450170?v=4"/>',
+			},
+			{
 				link: "https://ioca-react.vercel.app/",
 				title: '<h2 class="jaini">IOCA / REACT</h2>',
 				icon: '<img src="https://ioca-react.vercel.app/logo.png"/>',
 			},
 			{
 				link: "https://rho-admin.vercel.app/",
-				title: '<h2 class="jaini">Rho ADMIN</h2>',
+				title: "<h2>Rho ADMIN</h2>",
 				icon: "<b>ρ</b>",
 			},
 		];
