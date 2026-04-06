@@ -85,10 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		c && c.classList.remove("active");
 	}
 
-	function closeItem(id) {
-		console.log(`close item ${id}`);
-	}
-
 	function initPhotographs() {
 		const list = [
 			{
@@ -143,14 +139,19 @@ document.addEventListener("DOMContentLoaded", () => {
 				icon: '<img src="https://avatars.githubusercontent.com/u/20450170?v=4"/>',
 			},
 			{
+				link: "https://github.com/MunGaaKei/netsil-app",
+				title: "<h2 class='jaini'>NETSIL</h2>",
+				icon: "<b style='font-size: 40px;line-height: 1;'>🎵</b>",
+			},
+			{
 				link: "https://ioca-react.vercel.app/",
 				title: '<h2 class="jaini">IOCA / REACT</h2>',
 				icon: '<img src="https://ioca-react.vercel.app/logo.png"/>',
 			},
 			{
 				link: "https://rho-admin.vercel.app/",
-				title: "<h2>Rho ADMIN</h2>",
-				icon: "<b>ρ</b>",
+				title: "<h2 class='jaini'>Rho ADMIN</h2>",
+				icon: "<b style='font-size: 48px;line-height: 1;'>ρ</b>",
 			},
 		];
 
