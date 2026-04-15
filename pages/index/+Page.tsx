@@ -8,7 +8,7 @@ export default function Page() {
     const [codeVisible, setCodeVisible] = useState<boolean>(false);
 
     return (
-        <>
+        <div className="container">
             <div className="bio">
                 <h1 style={{ display: "flex" }}>
                     <ruby>
@@ -39,6 +39,6 @@ export default function Page() {
             <Codes visible={codeVisible} onVisibleChange={setCodeVisible} />
 
             <Stone />
-        </>
+        </div>
     );
 }

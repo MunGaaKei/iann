@@ -119,15 +119,16 @@ img {
     background-color: transparent;
 }
 
+body {
+    --color: #1a1a1a;
+    --color-secondary: #4a4a4a;
+    --color-slight: rgba(166, 166, 166, 0.32);
+}
+
 .container {
     position: fixed;
     inset: 0;
     overflow: hidden;
-    line-height: 1.5;
-
-    --color: #1a1a1a;
-    --color-secondary: #4a4a4a;
-    --color-slight: rgba(166, 166, 166, 0.32);
 }
 
 .bio {

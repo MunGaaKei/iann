@@ -80,7 +80,7 @@ export default function Page() {
     };
 
     return (
-        <div className={css.page}>
+        <>
             <h1 className={css.title}>Photography</h1>
 
             <a href={`${baseUrl}`} className={css.back}>
@@ -140,6 +140,6 @@ export default function Page() {
                     );
                 })}
             </div>
-        </div>
+        </>
     );
 }
