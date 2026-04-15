@@ -1,0 +1,1 @@
+var e={page:`_page_1xj5c_1`,back:`_back_1xj5c_41`};export{e as t};
