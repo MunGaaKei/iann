@@ -2,6 +2,7 @@ import { Mail } from "lucide-react";
 import { useState } from "react";
 import { Stone } from "../../components/background";
 import Codes from "../../components/codes";
+import { baseUrl } from "../../components/utils";
 
 export default function Page() {
     const [codeVisible, setCodeVisible] = useState<boolean>(false);
@@ -23,7 +24,7 @@ export default function Page() {
                         things
                     </a>
                     with design, and do
-                    <a href="/photography" className="nav">
+                    <a href={`${baseUrl}photography`} className="nav">
                         photography
                     </a>
                     around. <br />

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "../../components/image";
 import { UndoIcon } from "../../components/svg/return";
+import { baseUrl } from "../../components/utils";
 import { images } from "./data";
 import css from "./index.module.css";
 
@@ -76,7 +77,7 @@ export default function Page() {
         <div className={css.page}>
             <h1 className={css.title}>Photography</h1>
 
-            <a href="/" className={css.back}>
+            <a href={`${baseUrl}`} className={css.back}>
                 <UndoIcon strokeWidth={3} />
             </a>
 

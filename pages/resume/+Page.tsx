@@ -1,6 +1,6 @@
 import { Mail, Smartphone } from "lucide-react";
 import styles from "./resume.module.css";
-import avatar from "/assets/me.jpg";
+import avatar from "/public/me.jpg";
 
 export default function Page() {
     return (

@@ -5,5 +5,5 @@ import { defineConfig } from "vite";
 
 export default defineConfig(({ command }) => ({
     plugins: [vike(), react()],
-    base: command === "serve" ? "/" : "/iann/",
+    base: command === "build" ? "/iann/" : "/",
 }));

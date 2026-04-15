@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import stoneUrl from "../assets/stone.png";
+import stoneUrl from "../public/stone.png";
 
 export function Background() {
     return <div className="background"></div>;
