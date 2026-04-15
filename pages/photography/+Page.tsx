@@ -117,7 +117,7 @@ export default function Page() {
                                 return (
                                     <Image
                                         key={img}
-                                        src={img}
+                                        src={`${baseUrl}${img}`}
                                         className={css.image}
                                         rootMargin="0px"
                                         style={{
