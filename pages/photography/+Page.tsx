@@ -34,7 +34,13 @@ function View(props: {
             <h2 className={css.locTitle}>{loc}</h2>
 
             {images.map((img, i) => {
-                return <Image key={img} src={img} className={css.viewImage} />;
+                return (
+                    <Image
+                        key={img}
+                        src={`${baseUrl}photograph/${img}`}
+                        className={css.viewImage}
+                    />
+                );
             })}
         </div>
     );
@@ -117,7 +123,7 @@ export default function Page() {
                                 return (
                                     <Image
                                         key={img}
-                                        src={`${baseUrl}${img}`}
+                                        src={`${baseUrl}photograph/thumbs/${img}`}
                                         className={css.image}
                                         rootMargin="0px"
                                         style={{

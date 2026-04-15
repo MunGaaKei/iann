@@ -76,7 +76,7 @@
 .view {
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.94);
     backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@
 }
 
 .viewImage {
-    max-width: 800px;
+    max-width: 1000px;
     flex-shrink: 0;
     border-radius: 4px;
 }
@@ -109,11 +109,10 @@
     font-size: 32px;
     font-weight: 500;
     z-index: 10;
-    backdrop-filter: blur(12px);
     padding: 8px 12px 4px;
     line-height: 1;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.94);
     transform: rotate(-8deg);
 }
 
