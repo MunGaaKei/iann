@@ -1,0 +1,27 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.24s;
+    overflow: hidden;
+}
+
+.loaded {
+    background-color: transparent;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    opacity: 0;
+    transform: scale(1.12);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.loaded .image {
+    transform: scale(1);
+    opacity: 1;
+}
