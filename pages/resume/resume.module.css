@@ -1,0 +1,75 @@
+.resume {
+    overflow: auto;
+    scrollbar-width: 0;
+    height: 100vh;
+    width: 880px;
+    max-width: 100%;
+    margin: 12px auto;
+    font-family:
+        "Montserrat",
+        -apple-system,
+        BlinkMacSystemFont,
+        Consolas,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar {
+    width: 144px;
+}
+.bio {
+    margin-right: auto;
+}
+.bio-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bio > p {
+    margin: 2px 0;
+}
+.bio svg {
+    margin-left: 0.5em;
+    width: 1.2em;
+    height: 1.2em;
+}
+.from {
+    margin: 8px 0;
+}
+.skills {
+    margin: 12px auto 40px;
+}
+.projects {
+    margin: 40px auto;
+}
+.title {
+    margin: 24px 0 4px;
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+.company {
+    margin-right: 20px;
+    color: #212121;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1;
+}
+.content {
+    color: #4a4a4a;
+}
+.content b {
+    color: #212121;
+}
+.website {
+    margin: 40px 0 0;
+}
+.projects .title {
+    margin: 16px 0 4px;
+}

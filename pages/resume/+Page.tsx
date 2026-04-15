@@ -1,0 +1,249 @@
+import { Mail, Smartphone } from "lucide-react";
+import styles from "./resume.module.css";
+import avatar from "/assets/me.jpg";
+
+export default function Page() {
+    return (
+        <div className={styles.resume}>
+            <div className={styles.intro}>
+                <div className={styles.bio}>
+                    <h1>满家 淇</h1>
+                    <p>
+                        <a
+                            href="mailto:502975759@qq.com"
+                            className={styles["bio-contact"]}
+                        >
+                            502975759@qq.com
+                            <Mail size={20} fill="var(--color-slight)" />
+                        </a>
+                    </p>
+                    <p className={styles["bio-contact"]}>
+                        <b>185 8787 1874</b>
+                        <Smartphone size={20} fill="var(--color-slight)" />
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/MunGaaKei"
+                            target="_blank"
+                            className={styles["bio-contact"]}
+                        >
+                            MunGaaKei
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 480 512"
+                            >
+                                <path
+                                    d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1s10.9-55.1 36.7-55.1s36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95c-37.9 76.6-142.1 74.8-216.7 74.8c-75.8 0-186.2 2.7-225.6-74.8c-14.6-29-20.2-63.1-20.2-95c0-41.9 13.9-81.5 41.5-113.6c-5.2-15.8-7.7-32.4-7.7-48.8c0-21.5 4.9-32.3 14.6-51.8c45.3 0 74.3 9 108.8 36c29-6.9 58.8-10 88.7-10c27 0 54.2 2.9 80.4 9.2c34-26.7 63-35.2 107.8-35.2c9.8 19.5 14.6 30.3 14.6 51.8c0 16.4-2.6 32.7-7.7 48.2c27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6c-18.9 0-37 3.4-56 6c-14.9 2.3-29.8 3.2-45.1 3.2c-15.2 0-30.1-.9-45.1-3.2c-18.7-2.6-37-6-56-6c-46.8 0-73.5 38.7-73.5 82.6c0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1s36.7-34.2 36.7-55.1s-10.9-55.1-36.7-55.1z"
+                                    fill="currentColor"
+                                ></path>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+                <a className={styles.avatar} href="/">
+                    <img src={avatar} alt="头像" />
+                </a>
+            </div>
+            <div className={`${styles.skills} ${styles.content}`}>
+                <p>
+                    精通<b>Javascript</b>、<b>CSS</b>，擅长组件开发，编写了
+                    <b>UI(React & Vue)</b>{" "}
+                    框架库以及开发文档，以及主导为公司开发的
+                    <b>Vue3</b> 后台系统框架。主流技术栈包括<b>React</b>、
+                    <b>NextJS</b>、<b>Vue(2&3)</b>，后端使用<b>NodeJS</b>，
+                    <b>Prisma</b>。可使用
+                    <b>AI</b> 辅助开发。擅长兼容<b>移动端响应式</b>
+                    页面开发。以及<b>Shopify</b> 独立站开发经验。
+                </p>
+                <p>
+                    在 <b>AI</b> 技术方面有一定的研究和实现，包括<b>API对接</b>
+                    、<b>对话实现和体验</b>、<b>模型记忆</b> 等方面。
+                </p>
+                <p style={{ marginTop: "0.5em" }}>
+                    本人<b>16</b>年本科毕业于<b>武汉科技大学</b>网络工程专业，约
+                    <b>9</b> 年工作经验。英语<b>CET4</b>
+                    ，喜好钻研新技术，自学能力强，能迅速上手，很快适应开发环境，具有良好的规范编码习惯。性格温和，易于沟通，并且热爱运动。希望有幸能在贵公司工作。
+                </p>
+            </div>
+            <div className="exps">
+                <h2>工作经历</h2>
+
+                <div className={styles.title}>
+                    <b className={styles.company}>广州蜚美网络科技有限公司</b>
+                    高级前端开发 2023/09-2024/11
+                </div>
+                <div className={styles.content}>
+                    <p>
+                        公司主要业务是东南亚方向护肤化妆品销售，主要品牌
+                        <a href="https://skintific.com/" target="_blank">
+                            Skintific
+                        </a>
+                        。
+                    </p>
+                    <ul>
+                        <li>
+                            开发维护公司内部<b>DMS</b>
+                            系统（包含十几个子系统）功能和页面，每天多迭代。系统基于
+                            <b>Vite</b>，<b>React</b>，使用 <b>Arco Design</b>、
+                            <b>Redux</b>、<b>Typescript</b>、<b>Websocket</b>
+                            等，后端<b>Java</b>。涉及<b>权限</b>、
+                            <b>多租户多语言</b>、主题等功能。
+                        </li>
+                        <li>
+                            与多名团队成员共同开发
+                            KOL、绩效、物流、剪辑、财务等多个子系统。解决
+                            <b>大数据加载</b>，页面组件<b>性能优化</b>，
+                            <b>动态表单配置</b>、<b>数据预渲染</b>
+                            等复杂问题。根据业务功能二次封装公共表格组件，以及提供多种通用和针对性表格交互类型，优化系统样式。
+                        </li>
+                        <li>
+                            同时支持相对老旧基于<b>Vue2</b>
+                            的另一后台管理系统（负责前台DMS权限、角色、菜单等配置分配）的维护。
+                        </li>
+                    </ul>
+                </div>
+
+                <div className={styles.title}>
+                    <a
+                        href="https://www.guyu.com.cn/"
+                        target="_blank"
+                        className={styles.company}
+                    >
+                        广州谷雨生物科技有限公司
+                    </a>
+                    前端开发 2021/7-2023/5
+                </div>
+                <ul className={styles.content}>
+                    <li>
+                        负责海外部电商 <b>shopify</b> 独立站开发，开发语言主要为
+                        <b>liquid</b>，独立站内容主要是女装与饰品的海外营销。
+                    </li>
+                    <li>
+                        主要负责页面和营销组件开发及维护，管理店铺应用插件，处理日常bug等。独立站均为响应式设计，PC端和移动端均能友好展示。
+                    </li>
+                    <li>
+                        负责广告数据系统搭建，项目的功能是让投放和广告营销同事查询展示所需的数据，基于
+                        <b>Vite</b>、<b>Vue3</b>、<b>Naive UI</b>
+                        开发，业务代码也是使用Vue3进行编写，该系统也是从零构建。其中也解耦抽离开发出一个基于上述技术栈的后台管理系统，开源在个人的github里：
+                        <a
+                            href="https://github.com/MunGaaKei/rho-admin"
+                            target="_blank"
+                        >
+                            RHO Admin
+                        </a>
+                        ，具备多标签页缓存、i18n、主题色选择、角色权限等基本功能，利于二次开发。公司的另一个管理系统项目（商品管理系统）也基于该框架统一重构。
+                    </li>
+                    <li>
+                        使用 <b>Node</b> 编写脚本命令自动批量生成组件模版代码。
+                    </li>
+                </ul>
+
+                <div className={styles.title}>
+                    <a
+                        className={styles.company}
+                        href="https://www.mmldigi.com/"
+                        target="_blank"
+                    >
+                        慢慢来数字营销
+                    </a>
+                    前端开发 2018/2-2021/5
+                </div>
+                <div className={styles.content}>
+                    <ul>
+                        <li>
+                            <b>公司主页</b>：负责开发与维护
+                        </li>
+                        <li>
+                            <b>外贸网站独立建站</b>
+                            ：在与设计师探讨交互效果、后端对接接口的配合下完成建站，其中包括有公司官网和客户公司网站，项目均可进行访问。大部分情况下由个人负责整个前端部分，包括页面代码编写、后端数据对接、动画效果展示以及用户交互。每个月完成
+                            1~3 个客户项目，同时会协助团队其他成员进行合作开发。
+                        </li>
+                        <li>
+                            <b>中台项目</b>
+                            ：负责中台项目的所有前端开发工作，编写基本组件模板，组件可进行修改、扩展和复用，从而提高项目开发的效率。本人负责组件模板的代码结构设计和代码编写，与后端沟通配合，同时编写使用文档。
+                        </li>
+                        <li>
+                            此外还负责编写公用插件，如多功能分页，博客模板，轮播效果和设计稿预览等，编写组内开发文档。
+                        </li>
+                        <li>参与开发功能决策，有需求评审会。</li>
+                    </ul>
+                    <p>
+                        技术上，项目开发基于 <b>Wordpress</b>，开发主要采用
+                        <b>jQuery</b>、<b>SASS</b>，也会使用<b>Vue</b>
+                        等其它库，页面开发均为响应式设计，在PC端及移动端下均能友好展示，后台语言为
+                        <b>PHP</b>，项目代码库由 <b>Git</b> 存储。
+                    </p>
+                </div>
+
+                <div className={styles.title}>
+                    <b className={styles.company}> 南宁博睿通软件技术 </b>
+                    前端开发 2016/5-2017/10
+                </div>
+                <div className={styles.content}>
+                    <p>
+                        主要参与<b>机关事务管理系统</b>
+                        项目，负责页面和功能编写，开发了一些功能组件如：
+                    </p>
+                    <ul>
+                        <li>
+                            自定义流程：对客户事务的流程进行自定义编辑，不同的用户角色需要分配不同流程项。
+                        </li>
+                        <li>
+                            自定义表单组件编辑：对表单控件进行自定义编辑，对编辑后的模板可以进行解析、存储以及重新生成。
+                        </li>
+                        <li>
+                            地图标注绘制：用户可以对地图进行动态点线标注以及记录，展示车辆的实时位置以及历史轨迹。
+                        </li>
+                        <li>日报系统：同事进行日报填写和编辑。</li>
+                    </ul>
+                    <p>
+                        <b>自主学习平台项目</b>
+                        ，本人主要负责医学高校考试系统的编写，包括在线考试以及答题统计。项目基于文档管理平台
+                        <b>Alfresco</b>。
+                    </p>
+                    <p>
+                        项目使用 <b>Dojo</b> 框架，以及<b>jQuery</b>、<b>Vue</b>
+                        ，模板引擎为<b>JSP</b>，项目代码库由<b>Git</b>
+                        存储。在模块化开发与浏览器兼容问题处理有一定的经验。
+                    </p>
+                </div>
+            </div>
+            <div className={styles.projects}>
+                <h2>开源项目</h2>
+
+                <div className={styles.title}>
+                    <a
+                        className={styles.company}
+                        href="https://github.com/MunGaaKei/ioca-react/"
+                        target="_blank"
+                    >
+                        @ioca/react
+                    </a>
+                    文档地址：https://ioca-react.vercel.app/
+                </div>
+                <p className={styles.content}>
+                    基于 React
+                    开发，从过往业务经历提取，组件库设计与体积从轻，多主题，易组合扩展。配置有功能使用文档，根据使用反馈保持对项目进行维护。已发布在
+                    <b>npm</b> 上随时提供下载使用。
+                </p>
+
+                <div className={styles.title}>
+                    <a
+                        className={styles.company}
+                        href="https://github.com/MunGaaKei/netsil-app"
+                    >
+                        NETSIL
+                    </a>
+                    桌面端音乐播放器
+                </div>
+                <p className={styles.content}>
+                    基于 <b>Tauri</b>、<b>React</b>、<b>Vite</b> 开发，集合了
+                    <b>QQ音乐</b> 和 <b>网易云音乐</b> 的<b>登陆认证</b>、
+                    <b>播放</b>、<b>搜索</b>、<b>歌单</b>、<b>本地数据存储</b>、
+                    <b>歌词</b>等功能。
+                </p>
+            </div>
+        </div>
+    );
+}

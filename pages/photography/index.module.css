@@ -1,0 +1,141 @@
+.page {
+    position: absolute;
+    inset: 0;
+    overflow: auto;
+
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image: radial-gradient(#aaa 1.4px, #ffffff 1.4px);
+    background-size: 28px 28px;
+}
+.title {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    writing-mode: sideways-rl;
+    font-family: "jaini";
+    line-height: 1;
+}
+
+.back {
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.list {
+    margin-top: 300px;
+    margin-bottom: 120px;
+    padding: 32px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 240px 80px;
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+}
+
+.item {
+    position: relative;
+    min-width: 200px;
+    height: 160px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image {
+    max-width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: unset;
+    filter: grayscale(0.5);
+    transition: all 0.12s;
+    transform-origin: center center;
+    &:hover {
+        filter: none;
+        transform: rotate(0) !important;
+        &:not(:last-child) {
+            transform: translateX(48px) !important;
+        }
+    }
+    &:not(:last-child) {
+        margin-left: -40px;
+    }
+    img {
+        border-radius: 2px;
+    }
+}
+
+.view {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.12s;
+    z-index: 100;
+    pointer-events: none;
+    overflow: auto;
+    padding: 80px 20px;
+    gap: 40px;
+}
+
+.view.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.viewImage {
+    max-width: 800px;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.locTitle {
+    position: sticky;
+    align-self: start;
+    top: 40px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    z-index: 10;
+    backdrop-filter: blur(12px);
+    padding: 8px 12px 4px;
+    line-height: 1;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: rotate(-8deg);
+}
+
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 0px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.12s;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.cursor.active {
+    opacity: 1;
+}
