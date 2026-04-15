@@ -1,0 +1,26 @@
+# MacOS
+.DS_Store
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+dist
+
+# Gatsby files
+.cache/
+# Comment in the public line in if your project uses Gatsby and not Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
+
+# VSCode
+.vscode/
+.vscode-test
+
+# Vercel
+.vercel/
