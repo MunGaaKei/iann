@@ -9,7 +9,7 @@ const config: Config = {
     title: "Iann",
     description: "",
     prerender: true,
-    favicon: "/assets/ico.ico",
+    favicon: "/ico.ico",
 
     extends: [vikeReact],
 };

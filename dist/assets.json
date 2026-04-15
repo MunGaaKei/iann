@@ -3,6 +3,14 @@
     "file": "assets/static/assets_global-2c5c9ac3.D5T0yr7F.css",
     "src": "_assets_global-2c5c9ac3.D5T0yr7F.css"
   },
+  "_chunk-B0vfF6D7.js": {
+    "file": "assets/chunks/chunk-B0vfF6D7.js",
+    "name": "mail",
+    "imports": [
+      "_chunk-CiLk1KTr.js",
+      "_chunk-DW6JDeXv.js"
+    ]
+  },
   "_chunk-BL6yRWDe.js": {
     "file": "assets/chunks/chunk-BL6yRWDe.js",
     "name": "components_image_index.module-0fe29740",
@@ -35,12 +43,21 @@
       "assets/static/pages_photography_index.BA7BLbU0.css"
     ]
   },
+  "_chunk-Chcui0tK.js": {
+    "file": "assets/chunks/chunk-Chcui0tK.js",
+    "name": "utils",
+    "imports": [
+      "_chunk-CiLk1KTr.js",
+      "_chunk-DW6JDeXv.js",
+      "_chunk-BL6yRWDe.js"
+    ]
+  },
   "_chunk-CiLk1KTr.js": {
     "file": "assets/chunks/chunk-CiLk1KTr.js",
     "name": "rolldown-runtime"
   },
-  "_chunk-CnHB5PsE.js": {
-    "file": "assets/chunks/chunk-CnHB5PsE.js",
+  "_chunk-DW6JDeXv.js": {
+    "file": "assets/chunks/chunk-DW6JDeXv.js",
     "name": "Loading",
     "imports": [
       "_chunk-CiLk1KTr.js",
@@ -50,29 +67,11 @@
       "assets/static/assets_global-2c5c9ac3.D5T0yr7F.css"
     ],
     "assets": [
-      "assets/static/stone.gqiaKwbH.png",
       "assets/static/Kalam-Regular.eH010FEw.ttf",
       "assets/static/Kalam-Bold.DrYU5j2_.ttf",
       "assets/static/Montserrat-Regular.BdMzRefO.ttf",
       "assets/static/Montserrat-SemiBold.C0-6BeuA.ttf",
       "assets/static/Jaini-Regular.CFTV1_8i.ttf"
-    ]
-  },
-  "_chunk-DMxyU6mQ.js": {
-    "file": "assets/chunks/chunk-DMxyU6mQ.js",
-    "name": "mail",
-    "imports": [
-      "_chunk-CiLk1KTr.js",
-      "_chunk-CnHB5PsE.js"
-    ]
-  },
-  "_chunk-fRdMpUqH.js": {
-    "file": "assets/chunks/chunk-fRdMpUqH.js",
-    "name": "return",
-    "imports": [
-      "_chunk-CiLk1KTr.js",
-      "_chunk-CnHB5PsE.js",
-      "_chunk-BL6yRWDe.js"
     ]
   },
   "_components_codes_index.CyDnGs2P.css": {
@@ -112,7 +111,7 @@
     "src": "assets/Montserrat-SemiBold.ttf"
   },
   "node_modules/.pnpm/vike@0.4.257_react-streamin_7a8c0df0c401ed49b2418d424ef69cb6/node_modules/vike/dist/client/runtime-client-routing/entry.js": {
-    "file": "assets/entries/entry-client-routing.C2EzMnKS.js",
+    "file": "assets/entries/entry-client-routing.CigoKJ_B.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/.pnpm/vike@0.4.257_react-streamin_7a8c0df0c401ed49b2418d424ef69cb6/node_modules/vike/dist/client/runtime-client-routing/entry.js",
     "isEntry": true,
@@ -130,44 +129,40 @@
     "file": "assets/static/me.C9Ag4u50.jpg",
     "src": "public/me.jpg"
   },
-  "public/stone.png": {
-    "file": "assets/static/stone.gqiaKwbH.png",
-    "src": "public/stone.png"
-  },
   "virtual:vike:page-entry:client:/pages/index": {
-    "file": "assets/entries/pages_index.bBVfgQp1.js",
+    "file": "assets/entries/pages_index.Dp4tdnPd.js",
     "name": "entries/pages/index",
     "src": "virtual:vike:page-entry:client:/pages/index",
     "isEntry": true,
     "imports": [
       "_chunk-CiLk1KTr.js",
-      "_chunk-CnHB5PsE.js",
+      "_chunk-DW6JDeXv.js",
       "_chunk-BY9Ogzmn.js",
-      "_chunk-fRdMpUqH.js",
-      "_chunk-DMxyU6mQ.js"
+      "_chunk-Chcui0tK.js",
+      "_chunk-B0vfF6D7.js"
     ]
   },
   "virtual:vike:page-entry:client:/pages/photography": {
-    "file": "assets/entries/pages_photography.DEzTSGLX.js",
+    "file": "assets/entries/pages_photography.C7WnT2WP.js",
     "name": "entries/pages/photography",
     "src": "virtual:vike:page-entry:client:/pages/photography",
     "isEntry": true,
     "imports": [
       "_chunk-CiLk1KTr.js",
-      "_chunk-CnHB5PsE.js",
-      "_chunk-fRdMpUqH.js",
+      "_chunk-DW6JDeXv.js",
+      "_chunk-Chcui0tK.js",
       "_chunk-CZJFf7wp.js"
     ]
   },
   "virtual:vike:page-entry:client:/pages/resume": {
-    "file": "assets/entries/pages_resume.CxlvYQF-.js",
+    "file": "assets/entries/pages_resume.YY2iUTNl.js",
     "name": "entries/pages/resume",
     "src": "virtual:vike:page-entry:client:/pages/resume",
     "isEntry": true,
     "imports": [
       "_chunk-CiLk1KTr.js",
-      "_chunk-CnHB5PsE.js",
-      "_chunk-DMxyU6mQ.js",
+      "_chunk-DW6JDeXv.js",
+      "_chunk-B0vfF6D7.js",
       "_chunk-BO-FSv5N.js"
     ],
     "assets": [
