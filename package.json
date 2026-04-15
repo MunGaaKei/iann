@@ -6,6 +6,7 @@
     "license": "MIT",
     "scripts": {
         "dev": "vike dev",
+        "postbuild": "cp dist/client/index.html dist/client/404.html",
         "build": "vike build --mode production",
         "preview": "vike build && vike preview",
         "predeploy": "npm run build",
