@@ -1,10 +1,15 @@
 {
+    "name": "iann",
+    "version": "1.0.0",
+    "description": "website for iann",
+    "author": "Mungaakei",
+    "license": "MIT",
     "scripts": {
         "dev": "vike dev",
-        "build": "vike build --mode production --outDir build",
+        "build": "vike build --mode production",
         "preview": "vike build && vike preview",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist/client"
     },
     "dependencies": {
         "lucide-react": "^1.8.0",
