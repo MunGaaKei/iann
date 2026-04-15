@@ -1,1 +1,0 @@
-var e={page:`_page_vfdzg_1`,title:`_title_vfdzg_21`,back:`_back_vfdzg_39`,list:`_list_vfdzg_61`,item:`_item_vfdzg_87`,image:`_image_vfdzg_103`,view:`_view_vfdzg_151`,visible:`_visible_vfdzg_185`,viewImage:`_viewImage_vfdzg_195`,locTitle:`_locTitle_vfdzg_207`,cursor:`_cursor_vfdzg_239`,active:`_active_vfdzg_277`};export{e as t};
