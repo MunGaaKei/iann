@@ -6,13 +6,14 @@
     "license": "MIT",
     "scripts": {
         "dev": "vike dev",
-        "postbuild": "cp dist/client/index.html dist/client/404.html",
+        "postbuild": "shx cp dist/client/index.html dist/client/404.html",
         "build": "vike build --mode production",
         "preview": "vike build && vike preview",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist/client"
     },
     "dependencies": {
+        "@types/node": "^25.6.0",
         "lucide-react": "^1.8.0",
         "motion": "^12.38.0",
         "react": "^19.2.5",
@@ -25,6 +26,7 @@
         "@types/react-dom": "^19.2.3",
         "@vitejs/plugin-react": "^6.0.1",
         "gh-pages": "^6.3.0",
+        "shx": "^0.4.0",
         "typescript": "^6.0.2",
         "vite": "^8.0.3"
     },
