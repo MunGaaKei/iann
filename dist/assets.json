@@ -111,7 +111,7 @@
     "src": "assets/Montserrat-SemiBold.ttf"
   },
   "node_modules/.pnpm/vike@0.4.257_react-streamin_7a8c0df0c401ed49b2418d424ef69cb6/node_modules/vike/dist/client/runtime-client-routing/entry.js": {
-    "file": "assets/entries/entry-client-routing.CigoKJ_B.js",
+    "file": "assets/entries/entry-client-routing.mhEqWN8_.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/.pnpm/vike@0.4.257_react-streamin_7a8c0df0c401ed49b2418d424ef69cb6/node_modules/vike/dist/client/runtime-client-routing/entry.js",
     "isEntry": true,
@@ -130,7 +130,7 @@
     "src": "public/me.jpg"
   },
   "virtual:vike:page-entry:client:/pages/index": {
-    "file": "assets/entries/pages_index.Dp4tdnPd.js",
+    "file": "assets/entries/pages_index.Ce5-4fI-.js",
     "name": "entries/pages/index",
     "src": "virtual:vike:page-entry:client:/pages/index",
     "isEntry": true,
@@ -143,7 +143,7 @@
     ]
   },
   "virtual:vike:page-entry:client:/pages/photography": {
-    "file": "assets/entries/pages_photography.C7WnT2WP.js",
+    "file": "assets/entries/pages_photography.CIYZBTST.js",
     "name": "entries/pages/photography",
     "src": "virtual:vike:page-entry:client:/pages/photography",
     "isEntry": true,

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "./image";
 import stoneUrl from "/stone.png";
 
 export function Background() {
@@ -21,7 +22,7 @@ export function Stone() {
     }, []);
 
     return (
-        <img
+        <Image
             src={stoneUrl}
             className="stone"
             style={{
