@@ -1,7 +1,7 @@
 {
     "scripts": {
         "dev": "vike dev",
-        "build": "vike build",
+        "build": "vike build --mode production --outDir build",
         "preview": "vike build && vike preview",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"

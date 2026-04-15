@@ -10,6 +10,8 @@ node_modules/
 .env.production.local
 .env.local
 
+dist
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
