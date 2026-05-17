@@ -1,1 +1,0 @@
-var e=`/iann/`;export{e as t};
