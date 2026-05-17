@@ -126,7 +126,7 @@
     "src": "assets/Montserrat-SemiBold.ttf"
   },
   "node_modules/.pnpm/vike@0.4.257_react-streaming@0.4.17_react-dom@19.2.5_react@19.2.5__react@19.2.5__srvx@0_75b6901a2ae754ff3e2acf721476b9af/node_modules/vike/dist/client/runtime-client-routing/entry.js": {
-    "file": "assets/entries/entry-client-routing.DGdiC617.js",
+    "file": "assets/entries/entry-client-routing.14zWiuRH.js",
     "name": "entries/entry-client-routing",
     "src": "node_modules/.pnpm/vike@0.4.257_react-streaming@0.4.17_react-dom@19.2.5_react@19.2.5__react@19.2.5__srvx@0_75b6901a2ae754ff3e2acf721476b9af/node_modules/vike/dist/client/runtime-client-routing/entry.js",
     "isEntry": true,
@@ -158,7 +158,7 @@
     ]
   },
   "virtual:vike:page-entry:client:/pages/index": {
-    "file": "assets/entries/pages_index.CIm-XZ3X.js",
+    "file": "assets/entries/pages_index.CdZThk3E.js",
     "name": "entries/pages/index",
     "src": "virtual:vike:page-entry:client:/pages/index",
     "isEntry": true,

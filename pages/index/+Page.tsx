@@ -36,7 +36,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <a href="/resume" className="nav to-resume">
+            <a href={`${baseUrl}resume`} className="nav to-resume">
                 <NotebookText size={20} fill="var(--color-slight)" />
             </a>
 

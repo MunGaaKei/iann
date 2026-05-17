@@ -31,6 +31,6 @@
         "vite": "^8.0.3"
     },
     "type": "module",
-    "packageManager": "pnpm@10.33.0",
+    "packageManager": "pnpm@11.1.2",
     "homepage": "https://mungaakei.github.io/iann"
 }
