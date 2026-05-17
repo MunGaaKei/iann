@@ -1,4 +1,5 @@
 import { Mail, Smartphone } from "lucide-react";
+import { baseUrl } from "../../components/utils";
 import styles from "./resume.module.css";
 import avatar from "/public/me.jpg";
 
@@ -8,7 +9,7 @@ export default function Page() {
             <div className={styles.intro}>
                 <div className={styles.bio}>
                     <h1>
-                        <a href="/">满家 淇</a>
+                        <a href={baseUrl}>满家 淇</a>
                     </h1>
                     <p>
                         <a
