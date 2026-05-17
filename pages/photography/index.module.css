@@ -2,6 +2,7 @@ body {
     &:has(.title) {
         background-image: radial-gradient(#aaa 1.4px, #ffffff 1.4px);
         background-size: 28px 28px;
+        background-attachment: fixed;
     }
 }
 
@@ -19,8 +20,8 @@ body {
     left: 40px;
     top: 40px;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(4px);
     padding: 4px 8px;
     border-radius: 4px;
 }

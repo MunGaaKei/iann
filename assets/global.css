@@ -145,6 +145,11 @@ body {
     text-align: right;
     align-items: flex-end;
 
+    ruby {
+        display: flex;
+        flex-direction: column-reverse;
+        line-height: 1;
+    }
     rt {
         margin-bottom: 4px;
         margin-left: 2px;
@@ -156,7 +161,7 @@ body {
         font-weight: 400;
     }
     h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
 }
 
@@ -202,4 +207,10 @@ body {
             background: rgba(220, 20, 60, 0.24);
         }
     }
+}
+
+.to-resume {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
 }

@@ -3,6 +3,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 12px;
+    font-size: 16px;
     font-family:
         "Montserrat",
         -apple-system,
@@ -58,6 +59,11 @@
     font-weight: 600;
     font-size: 1.2em;
     line-height: 1;
+}
+.time {
+    margin-left: 12px;
+    font-size: 0.9em;
+    font-family: monospace;
 }
 .content {
     color: #4a4a4a;

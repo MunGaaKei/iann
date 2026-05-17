@@ -19,7 +19,8 @@ export type CodesProps = {
 export default function Codes(props: CodesProps) {
     const { visible, onVisibleChange } = props;
     const [index, setIndex] = useState(0);
-    const lastWheelAtRef = useRef(0);
+    const settledRef = useRef(true);
+    const settleTimerRef = useRef<ReturnType<typeof setTimeout>>(null);
 
     const handleWheel = (e: WheelEvent<HTMLDivElement>) => {
         const delta =
@@ -28,17 +29,22 @@ export default function Codes(props: CodesProps) {
         if (delta === 0) return;
         if (Math.abs(delta) < 8) return;
 
-        const now = Date.now();
-        if (now - lastWheelAtRef.current < 350) return;
-        lastWheelAtRef.current = now;
+        if (settledRef.current) {
+            settledRef.current = false;
 
-        setIndex((prev) => {
-            const len = projects.length;
-            if (len === 0) return 0;
+            setIndex((prev) => {
+                const len = projects.length;
+                if (len === 0) return 0;
 
-            const next = prev + (delta > 0 ? 1 : -1);
-            return Math.min(len - 1, Math.max(0, next));
-        });
+                const next = prev + (delta > 0 ? 1 : -1);
+                return Math.min(len - 1, Math.max(0, next));
+            });
+        }
+
+        settleTimerRef.current && clearTimeout(settleTimerRef.current);
+        settleTimerRef.current = setTimeout(() => {
+            settledRef.current = true;
+        }, 150);
     };
 
     return (

@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, NotebookText } from "lucide-react";
 import { useState } from "react";
 import { Stone } from "../../components/background";
 import Codes from "../../components/codes";
@@ -12,10 +12,10 @@ export default function Page() {
             <div className="bio">
                 <h1 style={{ display: "flex" }}>
                     <ruby>
-                        满家<rt>Man</rt>
+                        满家<rt>Iann</rt>
                     </ruby>
                     <ruby>
-                        淇<rt>Iann</rt>
+                        淇<rt>Man</rt>
                     </ruby>
                 </h1>
                 <div className="content">
@@ -35,6 +35,10 @@ export default function Page() {
                     please.
                 </div>
             </div>
+
+            <a href="/resume" className="nav to-resume">
+                <NotebookText size={20} fill="var(--color-slight)" />
+            </a>
 
             <Codes visible={codeVisible} onVisibleChange={setCodeVisible} />
 

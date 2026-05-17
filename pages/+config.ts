@@ -7,8 +7,8 @@ const isDev = process.env.NODE_ENV === "development";
 
 const config: Config = {
     // https://vike.dev/head-tags
-    title: "Iann",
-    description: "",
+    title: "Iann Man",
+    description: "personal website of iann",
     prerender: true,
     favicon: isDev ? "/ico.ico" : "/iann/ico.ico",
 

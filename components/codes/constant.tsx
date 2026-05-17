@@ -1,5 +1,12 @@
 export const projects = [
     {
+        name: "Azir",
+        desc: "Multiple agents platform",
+        logo: "https://sandsoldier.vercel.app/logo.png",
+        link: "https://sandsoldier.vercel.app",
+        images: ["azir-screenshot.png"],
+    },
+    {
         name: "Netsil",
         desc: (
             <>

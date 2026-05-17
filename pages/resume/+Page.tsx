@@ -7,7 +7,9 @@ export default function Page() {
         <div className={styles.resume}>
             <div className={styles.intro}>
                 <div className={styles.bio}>
-                    <h1>满家 淇</h1>
+                    <h1>
+                        <a href="/">满家 淇</a>
+                    </h1>
                     <p>
                         <a
                             href="mailto:502975759@qq.com"
@@ -54,15 +56,14 @@ export default function Page() {
                     <b>NextJS</b>、<b>Vue(2&3)</b>，后端使用<b>NodeJS</b>，
                     <b>Prisma</b>。可使用
                     <b>AI</b> 辅助开发。擅长兼容<b>移动端响应式</b>
-                    页面开发。以及<b>Shopify</b> 独立站开发经验。
-                </p>
-                <p>
-                    在 <b>AI</b> 技术方面有一定的研究和实现，包括<b>API对接</b>
-                    、<b>对话实现和体验</b>、<b>模型记忆</b> 等方面。
+                    页面开发。以及<b>Shopify</b> 独立站开发经验。在 <b>AI</b>{" "}
+                    技术方面有一定的研究和实现，包括
+                    <b>Agent开发</b>、<b>对话实现和体验</b>、<b>模型记忆</b>
+                    等方面。
                 </p>
                 <p style={{ marginTop: "0.5em" }}>
                     本人<b>16</b>年本科毕业于<b>武汉科技大学</b>网络工程专业，约
-                    <b>9</b> 年工作经验。英语<b>CET4</b>
+                    <b>10</b>年工作经验。英语<b>CET4</b>
                     ，喜好钻研新技术，自学能力强，能迅速上手，很快适应开发环境，具有良好的规范编码习惯。性格温和，易于沟通，并且热爱运动。希望有幸能在贵公司工作。
                 </p>
             </div>
@@ -71,7 +72,8 @@ export default function Page() {
 
                 <div className={styles.title}>
                     <b className={styles.company}>广州蜚美网络科技有限公司</b>
-                    高级前端开发 2023/09-2024/11
+                    高级前端开发{" "}
+                    <span className={styles.time}>2023/09-2024/11</span>
                 </div>
                 <div className={styles.content}>
                     <p>
@@ -112,7 +114,7 @@ export default function Page() {
                     >
                         广州谷雨生物科技有限公司
                     </a>
-                    前端开发 2021/7-2023/5
+                    前端开发 <span className={styles.time}>2021/7-2023/5</span>
                 </div>
                 <ul className={styles.content}>
                     <li>
@@ -147,7 +149,7 @@ export default function Page() {
                     >
                         慢慢来数字营销
                     </a>
-                    前端开发 2018/2-2021/5
+                    前端开发 <span className={styles.time}>2018/2-2021/5</span>
                 </div>
                 <div className={styles.content}>
                     <ul>
@@ -178,7 +180,7 @@ export default function Page() {
 
                 <div className={styles.title}>
                     <b className={styles.company}> 南宁博睿通软件技术 </b>
-                    前端开发 2016/5-2017/10
+                    前端开发 <span className={styles.time}>2016/5-2017/10</span>
                 </div>
                 <div className={styles.content}>
                     <p>
@@ -215,15 +217,42 @@ export default function Page() {
                 <div className={styles.title}>
                     <a
                         className={styles.company}
+                        href="https://github.com/MunGaaKei/azir/"
+                        target="_blank"
+                    >
+                        Azir
+                    </a>
+
+                    <a href="https://sandsoldier.vercel.app/">
+                        https://sandsoldier.vercel.app/
+                    </a>
+                </div>
+                <p className={styles.content}>
+                    基于 <b>React</b>、<b>Vike</b>、<b>Hono</b>、
+                    <b>@ioca/react</b>，全栈多智能体 <b>AI</b>{" "}
+                    协作平台。它提供了一个可视化的智能体管理界面，支持创建和配置多个
+                    AI 智能体，每个智能体有独立的 <b>LLM</b>
+                    模型、启用<b>技能规则</b>和<b>工具权限</b>以及
+                    <b>上下文会话</b>。基于 <b>@openai</b>
+                    的智能体编排与任务路由，支持智能体间自动交接（handoff）与依赖解析；技能系统可从
+                    GitHub 导入或手动创建知识规则。
+                </p>
+
+                <div className={styles.title}>
+                    <a
+                        className={styles.company}
                         href="https://github.com/MunGaaKei/ioca-react/"
                         target="_blank"
                     >
                         @ioca/react
                     </a>
-                    文档地址：https://ioca-react.vercel.app/
+                    文档地址：
+                    <a href="https://ioca-react.vercel.app/">
+                        https://ioca-react.vercel.app/
+                    </a>
                 </div>
                 <p className={styles.content}>
-                    基于 React
+                    基于 <b>React</b>
                     开发，从过往业务经历提取，组件库设计与体积从轻，多主题，易组合扩展。配置有功能使用文档，根据使用反馈保持对项目进行维护。已发布在
                     <b>npm</b> 上随时提供下载使用。
                 </p>
@@ -233,12 +262,13 @@ export default function Page() {
                         className={styles.company}
                         href="https://github.com/MunGaaKei/netsil-app"
                     >
-                        NETSIL
+                        Netsil
                     </a>
                     桌面端音乐播放器
                 </div>
                 <p className={styles.content}>
-                    基于 <b>Tauri</b>、<b>React</b>、<b>Vite</b> 开发，集合了
+                    基于 <b>Tauri</b>、<b>React</b>、<b>Vite</b> 开发，
+                    <b>跨平台</b>打包发布，集合了
                     <b>QQ音乐</b> 和 <b>网易云音乐</b> 的<b>登陆认证</b>、
                     <b>播放</b>、<b>搜索</b>、<b>歌单</b>、<b>本地数据存储</b>、
                     <b>歌词</b>等功能。
