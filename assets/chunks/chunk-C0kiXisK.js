@@ -1,0 +1,1 @@
+var e={resume:`_resume_1on63_1`,intro:`_intro_1on63_50`,avatar:`_avatar_1on63_55`,bio:`_bio_1on63_58`,"bio-contact":`_bio-contact_1on63_61`,from:`_from_1on63_74`,skills:`_skills_1on63_77`,projects:`_projects_1on63_80`,title:`_title_1on63_83`,company:`_company_1on63_89`,time:`_time_1on63_96`,content:`_content_1on63_101`,website:`_website_1on63_107`};export{e as t};
