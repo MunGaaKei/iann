@@ -2,7 +2,7 @@
     width: 880px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 12px 12px;
     font-size: 16px;
     font-family:
         "Montserrat",
@@ -12,6 +12,39 @@
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
+
+    :global(a) {
+        position: relative;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.24s;
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            right: 0;
+            bottom: 0;
+            height: 1em;
+            background: #dadada;
+            z-index: -1;
+            border-radius: 2px;
+            transition: all 0.24s;
+        }
+        &:hover {
+            color: #000;
+            &:after {
+                left: 12%;
+                background: #ddd;
+            }
+        }
+    }
+
+    :global(ul) {
+        margin: 0;
+        padding: 0 0 0 1em;
+        list-style: disc;
+    }
 }
 
 .intro {

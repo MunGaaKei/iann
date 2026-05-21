@@ -54,8 +54,8 @@ export default function Page() {
                     <b>UI(React & Vue)</b>{" "}
                     框架库以及开发文档，以及主导为公司开发的
                     <b>Vue3</b> 后台系统框架。主流技术栈包括<b>React</b>、
-                    <b>NextJS</b>、<b>Vue(2&3)</b>，后端使用<b>NodeJS</b>，
-                    <b>Prisma</b>。可使用
+                    <b>Vue(2&3)</b>，后端使用<b>NodeJS</b>，<b>Prisma</b>
+                    。可使用
                     <b>AI</b> 辅助开发。擅长兼容<b>移动端响应式</b>
                     页面开发。以及<b>Shopify</b> 独立站开发经验。在 <b>AI</b>{" "}
                     技术方面有一定的研究和实现，包括
@@ -68,6 +68,82 @@ export default function Page() {
                     ，喜好钻研新技术，自学能力强，能迅速上手，很快适应开发环境，具有良好的规范编码习惯。性格温和，易于沟通，并且热爱运动。希望有幸能在贵公司工作。
                 </p>
             </div>
+
+            <div className={styles.projects}>
+                <h2>开源项目</h2>
+
+                <div className={styles.title}>
+                    <a
+                        className={styles.company}
+                        href="https://github.com/MunGaaKei/azir/"
+                        target="_blank"
+                    >
+                        Azir
+                    </a>
+
+                    <a href="https://sandsoldier.vercel.app/">
+                        https://sandsoldier.vercel.app/
+                    </a>
+                </div>
+                <p className={styles.content}>
+                    基于 <b>React</b>、<b>Vike</b>、<b>Hono</b>、<b>Openai</b>、
+                    <b>@ioca/react</b>，全栈多智能体 <b>AI</b> 协作平台。
+                    <ul>
+                        <li>
+                            它提供了一个可视化的智能体管理界面，支持创建和配置多个
+                            AI 智能体，每个智能体有独立的 <b>LLM</b>
+                            模型、<b>技能调用</b>、<b>MCP 接入</b>、
+                            <b>工具权限</b>
+                            、以及
+                            <b>上下文会话记忆</b>。
+                        </li>
+                        <li>
+                            支持智能体<b>路由编排</b>任务，多智能体
+                            <b>并行执行</b>
+                            与任务 <b>handoff 交接</b>，<b>定时任务</b>、
+                            <b>文件库</b>
+                            的读写功能。
+                        </li>
+                    </ul>
+                </p>
+
+                <div className={styles.title}>
+                    <a
+                        className={styles.company}
+                        href="https://github.com/MunGaaKei/ioca-react/"
+                        target="_blank"
+                    >
+                        @ioca/react
+                    </a>
+                    文档：
+                    <a href="https://ioca-react.vercel.app/">
+                        https://ioca-react.vercel.app/
+                    </a>
+                </div>
+                <p className={styles.content}>
+                    基于 <b>React</b>
+                    开发的组件库，从过往业务经历提取，组件库设计与体积从轻，多主题，易组合扩展。配置有功能使用文档，根据使用反馈保持对项目进行维护。已发布在
+                    <b>npm</b> 上提供下载。
+                </p>
+
+                <div className={styles.title}>
+                    <a
+                        className={styles.company}
+                        href="https://github.com/MunGaaKei/netsil-app"
+                    >
+                        Netsil
+                    </a>
+                    桌面端音乐播放器
+                </div>
+                <p className={styles.content}>
+                    基于 <b>Tauri</b>、<b>React</b>、<b>Vite</b> 开发，
+                    <b>跨平台</b>打包发布，集合了
+                    <b>QQ音乐</b> 和 <b>网易云音乐</b> 的<b>登陆认证</b>、
+                    <b>播放</b>、<b>搜索</b>、<b>歌单</b>、<b>本地数据存储</b>、
+                    <b>歌词</b>等功能。
+                </p>
+            </div>
+
             <div className="exps">
                 <h2>工作经历</h2>
 
@@ -133,7 +209,7 @@ export default function Page() {
                             href="https://github.com/MunGaaKei/rho-admin"
                             target="_blank"
                         >
-                            RHO Admin
+                            <b>Rho Admin</b>
                         </a>
                         ，具备多标签页缓存、i18n、主题色选择、角色权限等基本功能，利于二次开发。公司的另一个管理系统项目（商品管理系统）也基于该框架统一重构。
                     </li>
@@ -198,7 +274,7 @@ export default function Page() {
                         <li>
                             地图标注绘制：用户可以对地图进行动态点线标注以及记录，展示车辆的实时位置以及历史轨迹。
                         </li>
-                        <li>日报系统：同事进行日报填写和编辑。</li>
+                        <li>日报系统：公司人员进行日报填写和编辑。</li>
                     </ul>
                     <p>
                         <b>自主学习平台项目</b>
@@ -211,69 +287,6 @@ export default function Page() {
                         存储。在模块化开发与浏览器兼容问题处理有一定的经验。
                     </p>
                 </div>
-            </div>
-            <div className={styles.projects}>
-                <h2>开源项目</h2>
-
-                <div className={styles.title}>
-                    <a
-                        className={styles.company}
-                        href="https://github.com/MunGaaKei/azir/"
-                        target="_blank"
-                    >
-                        Azir
-                    </a>
-
-                    <a href="https://sandsoldier.vercel.app/">
-                        https://sandsoldier.vercel.app/
-                    </a>
-                </div>
-                <p className={styles.content}>
-                    基于 <b>React</b>、<b>Vike</b>、<b>Hono</b>、
-                    <b>@ioca/react</b>，全栈多智能体 <b>AI</b>{" "}
-                    协作平台。它提供了一个可视化的智能体管理界面，支持创建和配置多个
-                    AI 智能体，每个智能体有独立的 <b>LLM</b>
-                    模型、启用<b>技能规则</b>和<b>工具权限</b>以及
-                    <b>上下文会话</b>。基于 <b>@openai</b>
-                    的智能体编排与任务路由，支持智能体间自动交接（handoff）与依赖解析；技能系统可从
-                    GitHub 导入或手动创建知识规则。
-                </p>
-
-                <div className={styles.title}>
-                    <a
-                        className={styles.company}
-                        href="https://github.com/MunGaaKei/ioca-react/"
-                        target="_blank"
-                    >
-                        @ioca/react
-                    </a>
-                    文档地址：
-                    <a href="https://ioca-react.vercel.app/">
-                        https://ioca-react.vercel.app/
-                    </a>
-                </div>
-                <p className={styles.content}>
-                    基于 <b>React</b>
-                    开发，从过往业务经历提取，组件库设计与体积从轻，多主题，易组合扩展。配置有功能使用文档，根据使用反馈保持对项目进行维护。已发布在
-                    <b>npm</b> 上随时提供下载使用。
-                </p>
-
-                <div className={styles.title}>
-                    <a
-                        className={styles.company}
-                        href="https://github.com/MunGaaKei/netsil-app"
-                    >
-                        Netsil
-                    </a>
-                    桌面端音乐播放器
-                </div>
-                <p className={styles.content}>
-                    基于 <b>Tauri</b>、<b>React</b>、<b>Vite</b> 开发，
-                    <b>跨平台</b>打包发布，集合了
-                    <b>QQ音乐</b> 和 <b>网易云音乐</b> 的<b>登陆认证</b>、
-                    <b>播放</b>、<b>搜索</b>、<b>歌单</b>、<b>本地数据存储</b>、
-                    <b>歌词</b>等功能。
-                </p>
             </div>
         </div>
     );
